@@ -16,7 +16,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: Product, // Can be both a string representing the table name or a Sequelize model
+        model: Product, // table name or Model name can be referenced here
         key: "id",
       },
     },
@@ -24,7 +24,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: Tag, // Can be both a string representing the table name or a Sequelize model
+        model: Tag, // table name or Model name can be referenced here
         key: "id",
       },
     },
