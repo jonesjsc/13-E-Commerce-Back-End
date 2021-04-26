@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
     // find all products
     const productData = await Product.findAll({
       // be sure to include its associated Category and Tag data
-      include: [{ model: Tag, through: ProductTag, as: "products" }],
+      include: [{ model: Tag, through: ProductTag }],
     });
     res.status(200).json(productData);
   } catch (err) {
@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
     // find a single product by its `id`
     const productData = await Product.findByPk(req.params.id, {
       // be sure to include its associated Category and Tag data
-      include: [{ model: Tag, through: ProductTag, as: "products" }],
+      include: [{ model: Tag, through: ProductTag }],
     });
     // lets get fancy and 404 a id not found
     if (!productData) {
