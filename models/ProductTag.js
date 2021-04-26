@@ -16,7 +16,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: Product, // table name or Model name can be referenced here
+        model: "Product", // table name or Model name can be referenced here
         key: "id",
       },
     },
@@ -24,7 +24,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: Tag, // table name or Model name can be referenced here
+        model: "Tag", // table name or Model name can be referenced here
         key: "id",
       },
     },
