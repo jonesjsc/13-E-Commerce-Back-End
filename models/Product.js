@@ -13,13 +13,14 @@ Product.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
+      allowNull: false,
     },
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(8, 2),
       allowNull: false,
       validate: {
         isDecimal: true,
@@ -35,6 +36,7 @@ Product.init(
     },
     category_id: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
         model: Category, // Can be both a string representing the table name or a Sequelize model
         key: "id",
