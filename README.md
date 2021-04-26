@@ -30,7 +30,7 @@ This exercise requires the following npm modules
 
 Walkthrough of API test
 
-![<img src=./assets/insomniawalkthrough.gif>](./assets/insomniawalkthrough.gif)
+![<img src=./assets/insomniawalkthrough.GIF>](./assets/insomniawalkthrough.GIF)
 
 ## Fun Stats
 
