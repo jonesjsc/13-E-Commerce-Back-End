@@ -38,7 +38,7 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: "Category", // Can be both a string representing the table name or a Sequelize model
+        model: "category",
         key: "id",
       },
     },
